@@ -12,24 +12,23 @@ class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
         
-        vector<int> ans;        
+        if(head == NULL) return head;
+        
+        while(head != NULL && head->val == val){
+            head = head->next;
+        }
         ListNode* curr = head;
-        ListNode* temp = new ListNode(0);
-        
-        while(curr){
-            if(curr->val != val){
-                ans.push_back(curr->val);
-                curr= curr->next;
+        ListNode* prev = nullptr;
+        while(curr!=nullptr){
+            if(curr->val==val){
+                prev->next = curr->next;
+                curr = curr->next;
             }
-            else curr= curr->next;
+            else{
+                prev = curr;
+                curr = curr->next;        
+            }
         }
-        ListNode*p = temp;
-        
-        for(int i=0;i<ans.size();i++)
-        {
-            p->next = new ListNode(ans[i]);
-            p=p->next;
-        }
-        return temp->next;
+        return head;
     }
 };
