@@ -5,18 +5,18 @@
 <p><br>
 <span style="font-size:18px"><strong>Example 1:</strong></span></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input:</strong>
+<pre><span style="font-size:18px"><strong>Input:</strong>
 N = 4
 Arr = {1, 3, 5, 6}
 k = 5
 <strong>Output:</strong> 2
 <strong>Explaination:</strong> Since 5 is found at index 2 
-as Arr[2] = 5, the output is 2.</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+as Arr[2] = 5, the output is 2.</span></pre>
 
 <p><br>
 <span style="font-size:18px"><strong>Example 2:</strong></span></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input:</strong>
+<pre><span style="font-size:18px"><strong>Input:</strong>
 N = 4
 Arr = {1, 3, 5, 6}
 k = 2
@@ -24,7 +24,7 @@ k = 2
 <strong>Explaination:</strong> Since 2 is not present in 
 the array but can be inserted at index 1 
 to make the array sorted.</span>
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p><br>
 <span style="font-size:18px"><strong>Your Task:</strong><br>
